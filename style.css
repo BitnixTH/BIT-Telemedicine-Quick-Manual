@@ -1523,3 +1523,40 @@ body::before {
   }
 
 }
+/* =========================================================
+   HERO FINAL FIX
+   1. Hide duplicated QUICK MANUAL badge
+   2. Keep hero description on one line
+========================================================= */
+
+/* ซ่อน QUICK MANUAL / 빠른 사용 가이드 ด้านบนทั้งหมด */
+.hero-tag {
+  display: none !important;
+}
+
+/* ให้คำอธิบายด้านล่างอยู่บรรทัดเดียว */
+.hero-overlay p {
+  white-space: nowrap;
+  font-size: clamp(11px, 1.15vw, 14px);
+  line-height: 1.45;
+}
+
+/* ภาษาเกาหลีใช้ตัวเล็กลงเล็กน้อยเพื่อให้อยู่บรรทัดเดียว */
+html[lang="ko"] .hero-overlay p {
+  font-size: clamp(10px, 1.05vw, 13px);
+}
+
+
+/* มือถือ: ยังพยายามให้อยู่บรรทัดเดียวและลดขนาดตามจอ */
+@media (max-width: 600px) {
+
+  .hero-overlay p {
+    white-space: nowrap;
+    font-size: clamp(8px, 2.4vw, 11px);
+  }
+
+  html[lang="ko"] .hero-overlay p {
+    font-size: clamp(7.5px, 2.2vw, 10px);
+  }
+
+}
