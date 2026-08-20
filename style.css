@@ -678,6 +678,7 @@ body::before {
   display: grid;
 
   grid-template-columns:
+    58px
     120px
     minmax(0, 1fr)
     45px;
@@ -742,13 +743,11 @@ body::before {
 
 
 .step-number {
-  position: absolute;
+  position: static;
 
-  top: -1px;
+  justify-self: center;
 
-  left: -1px;
-
-  z-index: 5;
+  flex-shrink: 0;
 
   min-width: 48px;
 
@@ -1245,6 +1244,7 @@ body::before {
 
   .accordion-header {
     grid-template-columns:
+      48px
       100px
       minmax(0, 1fr)
       42px;
@@ -1442,6 +1442,7 @@ body::before {
     padding: 15px;
 
     grid-template-columns:
+      38px
       78px
       minmax(0, 1fr)
       35px;
