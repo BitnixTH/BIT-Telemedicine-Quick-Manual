@@ -1563,6 +1563,10 @@ html[lang="ko"] .hero-overlay p {
 
 /* =========================================================
    MOBILE STEP 09 TEXT FIX
+   เป้าหมาย:
+   ตรวจสอบรายการยาและ
+   ยืนยันว่าได้รับยา
+   เรียบร้อยแล้ว
 ========================================================= */
 @media (max-width: 700px) {
   #step-9 .accordion-title h2 {
@@ -1573,6 +1577,6 @@ html[lang="ko"] .hero-overlay p {
   #step-9 .accordion-title p {
     font-size: 12px;
     line-height: 1.55;
-    max-width: 190px;
+    max-width: 165px;
   }
 }
