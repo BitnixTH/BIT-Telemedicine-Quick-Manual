@@ -795,60 +795,72 @@ function changeLanguage(language) {
       }
 
 
-      if (subtitle) {
+if (subtitle) {
 
   if (language === "th") {
 
+    // STEP 01
     if (number === 1) {
-
       subtitle.innerHTML =
         'สร้างบัญชีผู้ใช้งานและ<span class="mobile-line-break"><br></span>' +
         'ยืนยันข้อมูล<span class="mobile-line-break"><br></span>' +
         'เพื่อเข้าใช้บริการ';
-
     }
 
-    else if (number === 8) {
-
+    // STEP 02
+    else if (number === 2) {
       subtitle.innerHTML =
-        'ตรวจสอบสถานะและ<span class="mobile-line-break"><br></span>' +
-        'ความคืบหน้าของการจัดส่งยา';
-
+        'เลือก วัน เวลา และแพทย์<span class="mobile-line-break"><br></span>' +
+        'ที่ต้องการนัดหมาย';
     }
 
-    else if (number === 9) {
+    // STEP 04
+    else if (number === 4) {
+      subtitle.innerHTML =
+        'พบแพทย์ออนไลน์<span class="mobile-line-break"><br></span>' +
+        'พร้อม AI ช่วยสรุปการรักษา<span class="mobile-line-break"><br></span>' +
+        'และจัดทำร่าง OPD';
+    }
 
+    // STEP 07
+    else if (number === 7) {
+      subtitle.innerHTML =
+        'ดูสรุปการรักษา และ<span class="mobile-line-break"><br></span>' +
+        'ใบสั่งยา หลังพบแพทย์';
+    }
+
+    // STEP 08
+    else if (number === 8) {
+      subtitle.innerHTML =
+        'ตรวจสอบสถานะ และ<span class="mobile-line-break"><br></span>' +
+        'ความคืบหน้า<span class="mobile-line-break"><br></span>' +
+        'ของการจัดส่งยา';
+    }
+
+    // STEP 09
+    else if (number === 9) {
       subtitle.innerHTML =
         'ตรวจสอบรายการยาและ<span class="mobile-line-break"><br></span>' +
         'ยืนยันว่าได้รับยา<span class="mobile-line-break"><br></span>' +
-        'เรียบร้อยแล้ว';
-
+        '<span class="step09-nowrap">เรียบร้อยแล้ว</span>';
     }
 
+    // STEP 11
     else if (number === 11) {
-
       subtitle.innerHTML =
         'รับคำแนะนำเกี่ยวกับ<span class="mobile-line-break"><br></span>' +
-        'การใช้ยาจากเภสัชกรผ่านวิดีโอ';
-
+        'การใช้ยา จากเภสัชกร<span class="mobile-line-break"><br></span>' +
+        'ผ่านวิดีโอ';
     }
 
+    // STEP อื่น ๆ ไม่เปลี่ยน
     else {
-
-      subtitle.textContent =
-        step.subtitle;
-
+      subtitle.textContent = step.subtitle;
     }
 
+  } else {
+    subtitle.textContent = step.subtitle;
   }
-
-  else {
-
-    subtitle.textContent =
-      step.subtitle;
-
-  }
-
 }
 
 
