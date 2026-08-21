@@ -818,8 +818,9 @@ if (subtitle) {
     else if (number === 4) {
       subtitle.innerHTML =
         'พบแพทย์ออนไลน์<span class="mobile-line-break"><br></span>' +
-        'พร้อม AI ช่วยสรุปการรักษา<span class="mobile-line-break"><br></span>' +
-        'และจัดทำร่าง OPD';
+        'พร้อม AI ช่วย<span class="mobile-line-break"><br></span>' +
+        'สรุปการรักษา และ<span class="mobile-line-break"><br></span>' +
+        'จัดทำร่าง OPD';
     }
 
     // STEP 07
@@ -840,8 +841,8 @@ if (subtitle) {
     // STEP 09
     else if (number === 9) {
       subtitle.innerHTML =
-        'ตรวจสอบรายการยาและ<span class="mobile-line-break"><br></span>' +
-        'ยืนยันว่าได้รับยา<span class="mobile-line-break"><br></span>' +
+        'ตรวจสอบรายการยา<span class="mobile-line-break"><br></span>' +
+        'และ ยืนยันว่าได้รับยา<span class="mobile-line-break"><br></span>' +
         '<span class="step09-nowrap">เรียบร้อยแล้ว</span>';
     }
 
