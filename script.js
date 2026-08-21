@@ -1331,8 +1331,42 @@ document
    INITIAL
 ========================================================= */
 
+const urlParams =
+  new URLSearchParams(
+    window.location.search
+  );
+
+const requestedLanguage =
+  urlParams.get("lang");
+
+let initialLanguage = "th";
+
+if (requestedLanguage === "en") {
+
+  initialLanguage = "en";
+
+}
+
+else if (requestedLanguage === "kr") {
+
+  initialLanguage = "ko";
+
+}
+
+else if (requestedLanguage === "ko") {
+
+  initialLanguage = "ko";
+
+}
+
+else if (requestedLanguage === "th") {
+
+  initialLanguage = "th";
+
+}
+
 changeLanguage(
-  "th"
+  initialLanguage
 );
 
 
