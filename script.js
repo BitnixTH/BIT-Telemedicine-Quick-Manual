@@ -797,17 +797,52 @@ function changeLanguage(language) {
 
       if (subtitle) {
 
-  if (
-    language === "th" &&
-    number === 9
-  ) {
+  if (language === "th") {
 
-    subtitle.innerHTML =
-      'ตรวจสอบรายการยาและ<span class="step09-mobile-break"><br></span>' +
-      'ยืนยันว่าได้รับยา<span class="step09-mobile-break"><br></span>' +
-      '<span class="step09-nowrap">เรียบร้อยแล้ว</span>';
+    if (number === 1) {
 
-  } else {
+      subtitle.innerHTML =
+        'สร้างบัญชีผู้ใช้งานและ<span class="mobile-line-break"><br></span>' +
+        'ยืนยันข้อมูล<span class="mobile-line-break"><br></span>' +
+        'เพื่อเข้าใช้บริการ';
+
+    }
+
+    else if (number === 8) {
+
+      subtitle.innerHTML =
+        'ตรวจสอบสถานะและ<span class="mobile-line-break"><br></span>' +
+        'ความคืบหน้าของการจัดส่งยา';
+
+    }
+
+    else if (number === 9) {
+
+      subtitle.innerHTML =
+        'ตรวจสอบรายการยาและ<span class="mobile-line-break"><br></span>' +
+        'ยืนยันว่าได้รับยา<span class="mobile-line-break"><br></span>' +
+        'เรียบร้อยแล้ว';
+
+    }
+
+    else if (number === 11) {
+
+      subtitle.innerHTML =
+        'รับคำแนะนำเกี่ยวกับ<span class="mobile-line-break"><br></span>' +
+        'การใช้ยาจากเภสัชกรผ่านวิดีโอ';
+
+    }
+
+    else {
+
+      subtitle.textContent =
+        step.subtitle;
+
+    }
+
+  }
+
+  else {
 
     subtitle.textContent =
       step.subtitle;

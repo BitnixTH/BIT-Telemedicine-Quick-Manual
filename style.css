@@ -1594,3 +1594,19 @@ html[lang="ko"] .hero-overlay p {
   }
 
 }
+/* =========================================================
+   MOBILE CUSTOM LINE BREAKS
+   TH: STEP 01, 08, 09, 11
+========================================================= */
+
+.mobile-line-break {
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  html[lang="th"] .mobile-line-break {
+    display: inline;
+  }
+
+}
