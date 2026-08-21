@@ -1580,3 +1580,31 @@ html[lang="ko"] .hero-overlay p {
     max-width: 165px;
   }
 }
+/* =========================================================
+   FORCE THAI LINE BREAK - STEP 09 MOBILE
+========================================================= */
+@media (max-width: 700px) {
+
+  html[lang="th"] #step-9 .accordion-title p {
+    font-size: 0;
+    max-width: none;
+    white-space: normal;
+  }
+
+  html[lang="th"] #step-9 .accordion-title p::after {
+    content:
+      "ตรวจสอบรายการยาและ\A"
+      "ยืนยันว่าได้รับยา\A"
+      "เรียบร้อยแล้ว";
+
+    white-space: pre-line;
+
+    display: block;
+
+    font-size: 12px;
+    line-height: 1.55;
+
+    color: #687b9a;
+  }
+
+}
