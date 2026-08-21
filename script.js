@@ -797,10 +797,24 @@ function changeLanguage(language) {
 
       if (subtitle) {
 
-        subtitle.textContent =
-          step.subtitle;
+  if (
+    language === "th" &&
+    number === 9
+  ) {
 
-      }
+    subtitle.innerHTML =
+      'ตรวจสอบรายการยาและ<span class="step09-mobile-break"><br></span>' +
+      'ยืนยันว่าได้รับยา<span class="step09-mobile-break"><br></span>' +
+      '<span class="step09-nowrap">เรียบร้อยแล้ว</span>';
+
+  } else {
+
+    subtitle.textContent =
+      step.subtitle;
+
+  }
+
+}
 
 
       if (detailTitle) {

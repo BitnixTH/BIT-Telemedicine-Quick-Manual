@@ -1562,49 +1562,35 @@ html[lang="ko"] .hero-overlay p {
 }
 
 /* =========================================================
-   MOBILE STEP 09 TEXT FIX
-   เป้าหมาย:
-   ตรวจสอบรายการยาและ
-   ยืนยันว่าได้รับยา
-   เรียบร้อยแล้ว
+   STEP 09 THAI MOBILE LINE BREAK - FINAL
+   - TH only
+   - Step 09 only
+   - Mobile only
 ========================================================= */
+
+.step09-mobile-break {
+  display: none;
+}
+
+.step09-nowrap {
+  white-space: nowrap;
+}
+
 @media (max-width: 700px) {
-  #step-9 .accordion-title h2 {
+
+  html[lang="th"] #step-9 .accordion-title h2 {
     font-size: 15px;
     white-space: nowrap;
   }
 
-  #step-9 .accordion-title p {
-    font-size: 12px;
-    line-height: 1.55;
-    max-width: 165px;
-  }
-}
-/* =========================================================
-   FORCE THAI LINE BREAK - STEP 09 MOBILE
-========================================================= */
-@media (max-width: 700px) {
-
   html[lang="th"] #step-9 .accordion-title p {
-    font-size: 0;
-    max-width: none;
-    white-space: normal;
-  }
-
-  html[lang="th"] #step-9 .accordion-title p::after {
-    content:
-      "ตรวจสอบรายการยาและ\A"
-      "ยืนยันว่าได้รับยา\A"
-      "เรียบร้อยแล้ว";
-
-    white-space: pre-line;
-
-    display: block;
-
     font-size: 12px;
     line-height: 1.55;
+    max-width: none;
+  }
 
-    color: #687b9a;
+  html[lang="th"] #step-9 .step09-mobile-break {
+    display: inline;
   }
 
 }
